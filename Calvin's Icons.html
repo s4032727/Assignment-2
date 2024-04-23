@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+    <title>Icon Template Square</title>
+        <style>
+            body {background-color: rgb(195, 227, 255);}
+            .row{
+                width:720px;
+                margin: 10px auto 10px auto ;
+            }
+            .image-container {
+                display: table-cell;
+                vertical-align: middle;
+                padding:20px;
+            
+            }
+        </style>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.2.1/buzz.min.js"></script>
+
+    </head>
+
+    <body> 
+        <div class="row">
+            <div class="image-container"> <img id="Beach" src="img/BEACH.png" onmouseover="this.src='img/BEACHD.png';" onmouseout="this.src='img/BEACH.png';" height="200" width="200"/></div>
+            <div class="image-container"> <img id="Rod" src="img/Rod.png" onmouseover="this.src='img/RodD.png';" onmouseout="this.src='img/Rod.png';" height="200" width="200"/></div>
+            <div class="image-container"><img id="Island" src="img/Island.png" onmouseover="this.src='img/IslandD.png';" onmouseout="this.src='img/Island.png';" height="200" width="200"/></div>
+        </div>
+
+        <div class="row">
+            <div class="image-container"><img id="Coral" src="img/Coral.png" onmouseover="this.src='img/CoralD.png';" onmouseout="this.src='img/Coral.png';"height="200" width="200"/></div>
+            <div class="image-container"><img id="Fish" src="img/FishFINAL.png" onmouseover="this.src='img/FishFINALD.png';" onmouseout="this.src='img/FishFINAL.png';"height="200" width="200"/></div>
+            <div class="image-container"><img id="Nut" src="img/COCONUT.png" onmouseover="this.src='img/COCONUTD.png';" onmouseout="this.src='img/COCONUT.png';" height="200" width="200"/></div>
+            </div>
+
+        <div class="row">
+            <div class="image-container"><img id="River" src="img/River.png" onmouseover="this.src='img/RiverD.png';" onmouseout="this.src='img/River.png';" height="200" width="200"/></div>
+            <div class="image-container"><img id="Ripple" src="img/Ripple.png" onmouseover="this.src='img/RippleD.png';" onmouseout="this.src='img/Ripple.png';" height="200" width="200"/></div>
+            <div class="image-container"><img id="Boat" src="img/Boat.png" onmouseover="this.src='img/BoatD.png';" onmouseout="this.src='img/Boat.png';" height="200" width="200"/></div>
+        </div>
+        
+        <script>
+            var Beach = new buzz.sound("sound/BeachF.mp3");
+            var Rod = new buzz.sound("sound/RodF.mp3");
+            var Island = new buzz.sound("sound/IslandF.mp3");
+            var Coral = new buzz.sound("sound/CoralF.mp3");
+            var Fish = new buzz.sound("sound/FishF.mp3");
+            var Nut = new buzz.sound("sound/CoconutF.mp3");
+            var River = new buzz.sound("sound/RiverF.mp3");
+            var Ripple = new buzz.sound("sound/RippleF2.mp3");
+            var Boat = new buzz.sound("sound/BoatF.mp3");
+
+            window.onload = function() {
+                document.getElementById('Beach').addEventListener('click', function () {Beach.play();});
+                document.getElementById('Rod').addEventListener('click', function () {Rod.play();});
+                document.getElementById('Island').addEventListener('click', function () {Island.play();});
+                document.getElementById('Coral').addEventListener('click', function () {Coral.play();});
+                document.getElementById('Fish').addEventListener('click', function () {Fish.play();});
+                document.getElementById('Nut').addEventListener('click', function () {Nut.play();}); 
+                document.getElementById('River').addEventListener('click', function () {River.play();});
+                document.getElementById('Ripple').addEventListener('click', function () {Ripple.play();});
+                document.getElementById('Boat').addEventListener('click', function () {Boat.play();});
+            };
+        </script>
+
+    </body>
+    
+</html>
